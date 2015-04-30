@@ -47,6 +47,7 @@ persist.data.qmi.adb_logmask=0
 rild.libpath=/system/lib/libsec-ril.so
 ro.ril.telephony.qan_resp_strings=6
 telephony.lteOnGsmDevice=1
+ro.telephony.mms_data_profile=5
 
 # Sensors
 debug.sensors=1
