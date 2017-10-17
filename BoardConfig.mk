@@ -49,7 +49,7 @@ TARGET_NEEDS_GCC_LIBC := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
 # CMHW
-BOARD_HARDWARE_CLASS += device/samsung/lt03lte/cmhw
+BOARD_HARDWARE_CLASS += device/samsung/lt03lte/lineagehw
 
 # Filesystem
 BOARD_BOOTIMAGE_PARTITION_SIZE := 11534336
