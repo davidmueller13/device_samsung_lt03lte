@@ -17,9 +17,9 @@
 # Inherit from common msm8974
 -include device/samsung/msm8974-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/samsung/lt03lte
+COMMON_PATH := device/samsung/lt03lte
 
-TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
+TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := lt03lte,lt03ltexx
@@ -29,8 +29,8 @@ AUDIO_FEATURE_ENABLED_NEW_SAMPLE_RATE := true
 USE_CUSTOM_AUDIO_POLICY := 1
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
-BOARD_CUSTOM_BT_CONFIG := $(LOCAL_PATH)/bluetooth/libbt_vndcfg.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
+BOARD_CUSTOM_BT_CONFIG := $(COMMON_PATH)/bluetooth/libbt_vndcfg.txt
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 
@@ -80,7 +80,7 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 TARGET_KERNEL_SOURCE := kernel/samsung/lt03lte
 
 # HIDL
-DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 
 # Legacy BLOB Support
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
@@ -90,7 +90,7 @@ WITH_DEXPREOPT := true
 
 # Power HAL
 TARGET_POWERHAL_VARIANT := qcom
-TARGET_POWERHAL_SET_INTERACTIVE_EXT := $(LOCAL_PATH)/power/power_ext.c
+TARGET_POWERHAL_SET_INTERACTIVE_EXT := $(COMMON_PATH)/power/power_ext.c
 
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -99,10 +99,10 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_RECOVERY_SWIPE := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 BOARD_USES_MMCUTILS := true
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := $(LOCAL_PATH)/releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
 # RIL
 BOARD_PROVIDES_LIBRIL := true
@@ -110,7 +110,7 @@ TARGET_RIL_VARIANT := caf
 
 # SELinux
 -include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
 
 # Sensors
 TARGET_NO_SENSOR_PERMISSION_CHECK := true
