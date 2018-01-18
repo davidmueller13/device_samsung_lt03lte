@@ -82,12 +82,6 @@ PRODUCT_PACKAGES += \
 # Gestures
 PRODUCT_PACKAGES += \
     com.cyanogenmod.keyhandler
- 
-# GPS
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/gps/etc/gps.conf:/system/etc/gps.conf \
-    $(LOCAL_PATH)/gps/etc/sap.conf:/system/etc/sap.conf \
-    $(LOCAL_PATH)/gps/etc/flp.conf:/system/etc/flp.conf
 
 # Input device
 PRODUCT_COPY_FILES += \
