@@ -155,10 +155,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libnetcmdiface \
     macloader \
-    hostapd \
-    hostapd_default.conf \
-    libwpa_client \
-    wpa_supplicant \
     wpa_supplicant.conf
 
 # Allow lockscreen rotation
