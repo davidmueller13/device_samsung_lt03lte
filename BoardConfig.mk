@@ -108,8 +108,7 @@ BOARD_PROVIDES_LIBRIL := true
 TARGET_RIL_VARIANT := caf
 
 # SELinux
--include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
+include $(COMMON_PATH)/sepolicy/sepolicy.mk
 
 # Sensors
 TARGET_NO_SENSOR_PERMISSION_CHECK := true
