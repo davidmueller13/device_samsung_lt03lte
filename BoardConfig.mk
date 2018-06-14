@@ -87,7 +87,9 @@ DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 
 # Legacy BLOB Support
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
-TARGET_LD_SHIM_LIBS := /system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so:/system/vendor/lib/hw/camera.vendor.msm8974.so|libshim_camera.so
+TARGET_LD_SHIM_LIBS += \ 
+	/system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so \
+	/system/vendor/lib/hw/camera.vendor.msm8974.so|libshim_camera.so
 
 # Pre-Optimize DEX
 WITH_DEXPREOPT := true
