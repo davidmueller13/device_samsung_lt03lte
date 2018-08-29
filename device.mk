@@ -70,13 +70,6 @@ PRODUCT_PACKAGES += \
     libshim_camera \
     libxml2
 
-# Display
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hdcp2.rx=tz \
-    ro.qualcomm.cabl=1 \
-    ro.secwvk=144 \
-    ro.sf.lcd_density=320
-
 # Doze
 PRODUCT_PACKAGES += \
     SamsungDoze
