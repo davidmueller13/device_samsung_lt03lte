@@ -108,6 +108,9 @@ TARGET_RIL_VARIANT := caf
 -include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
 
+# Sensors
+TARGET_NO_SENSOR_PERMISSION_CHECK := true
+
 # WiFi
 BOARD_HAVE_SAMSUNG_WIFI     := true
 BOARD_WLAN_DEVICE           := bcmdhd

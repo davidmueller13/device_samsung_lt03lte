@@ -62,11 +62,12 @@ PRODUCT_COPY_FILES += \
 # BoringSSL compatability wrapper
 PRODUCT_PACKAGES += \
     libboringssl-compat \
-    libstlport
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8974
+    camera.msm8974 \
+    libstlport \
+    libxml2
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -130,8 +131,7 @@ PRODUCT_COPY_FILES += \
 
 # Qualcomm
 PRODUCT_PACKAGES += \
-    libcnefeatureconfig \
-    libxml2
+    libcnefeatureconfig
 
 # Radio
 PRODUCT_PACKAGES += \
