@@ -444,13 +444,13 @@ service qmuxd /vendor/bin/qmuxd
     user radio
     group radio audio bluetooth gps oem_2950 wakelock log
 
-service sensors /system/bin/sensors.qcom
+service sensors /vendor/bin/sensors.qcom
     class late_start
     user root
     group root
     disabled
 
-service netmgrd /system/bin/netmgrd
+service netmgrd /vendor/bin/netmgrd
     class main
     user root
 	group root wifi wakelock radio inet
@@ -604,7 +604,7 @@ on property:persist.sys.ssr.restart_level=3
     write /sys/bus/msm_subsys/devices/subsys2/restart_level related
     write /sys/bus/msm_subsys/devices/subsys3/restart_level related
 
-service hvdcp /system/bin/hvdcp
+service hvdcp /vendor/bin/hvdcp
     class core
     user root
     group root
